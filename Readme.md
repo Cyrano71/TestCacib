@@ -6,7 +6,7 @@
 
 ```shell
 sudo yum install git -y
-git clone https://github.com/Cyrano71/Cacib.git
+git clone https://github.com/Cyrano71/TestCacib.git
 curl -O https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py --user
  ```
