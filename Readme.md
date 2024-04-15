@@ -14,7 +14,7 @@ python3 get-pip.py --user
 2. Install the required packages
 
    ```
-   cd Cacib
+   cd TestCacib
    pip install -r requirements.txt
    ```
 
