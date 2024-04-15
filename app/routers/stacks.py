@@ -36,6 +36,11 @@ async def push_value(stack_id: int, data: ValueDataRequest, db = Depends(get_db_
     await db.push_value(stack_id, data.value)
     return {"Status": "Success"}
 
+@router.delete("/rpn/stack/{stack_id}")
+async def delete_stack(stack_id: int, db = Depends(get_db_service)):
+    await db.delete_stack(stack_id)
+    return {"Status": "Success"}
+
 @router.get("/rpn/stack/{stack_id}")
 async def get_stack(stack_id: int, db = Depends(get_db_service)):
     stack = await db.get_stack(stack_id)

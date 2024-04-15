@@ -30,7 +30,7 @@ Open your browser and navigate to [docs](http://localhost:8000/docs) to view the
 5. Run the tests with `pytest`
 
 6. Next steps
-
+- add try catch / checks
 - add NoSql database
 - create dockerfile
 - add a .gitlab-ci.yml

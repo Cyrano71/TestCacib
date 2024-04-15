@@ -14,6 +14,7 @@ class DatabaseService:
 
     async def delete_stack(self, id:int):
         del self._stacks[id]
+        self._fake_db_id -= 1
 
     async def get_stack(self, id: int):
         return self._stacks[id]
